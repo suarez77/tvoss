@@ -51,7 +51,7 @@ function render() {
 }
 
 function getFeed(cb) {
-  Ajax.fetch("http://cdn.smoothstreams.tv/schedule/feed.json", (err, response) => {
+  Ajax.fetch("http://smoothstreams.tv/schedule/feed.json", (err, response) => {
     cb(JSON.parse(response));
   });
 }
